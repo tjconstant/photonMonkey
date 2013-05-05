@@ -1,14 +1,14 @@
-\name{disp.plot3}
-\alias{disp.plot3}
+\name{ggdisp.plot}
+\alias{ggdisp.plot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Plotting of irregular spaced matrix data with aribitary transformations
+Plotting of irregular spaced matrix data with aribitary transformations using ggplot
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-disp.plot3(x, y, z, fx = x, fy = y, nx = length(unique(x)), ny = length(unique(y)), ...)
+ggdisp.plot(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -27,16 +27,12 @@ functional transformation of length(x)
   \item{fy}{
 functional transformation of length(x)
 }
-  \item{nx}{
-length of unique x vector values (usually obtained from length(x))
+  \item{midpoint}{
+see ?poly.image
 }
-  \item{ny}{
-length of unique y vector values (usually obtained from length(y))
-}
-  \item{\dots}{
-graphical parameters to be passed to image.plot
-}
-}
+  \item{col}{
+a vector of R colors for the gradient on the resulting image plot.
+  }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
@@ -60,21 +56,29 @@ graphical parameters to be passed to image.plot
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link[image.plot:fields]{image.plot()}}
+%% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-library(fields) #required packages
+
+library(fields)
+
+library(ggplot2)
 
 data(SPPdispersion) #load example dataset
 
 wavelength<-SPPdispersion$wavelength
+
 angle<-SPPdispersion$angle
+
 reflection<-SPPdispersion$reflection
 
-disp.plot3(wavelength,angle,reflection) #plot data
+ggdisp.plot(wavelength,angle,reflection) #plot data
 
-kx<-(2*pi/wavelength)*sin(angle*pi/180) #transformation to dispersion plots
+kx<-(2*pi/wavelength)*sin(angle*pi/180)#transformation to dispersion plots
 omega<-2*pi*3e8/wavelength
 
-disp.plot3(wavelength,angle,reflection,kx,omega) #plot transformed data
+ggdisp.plot(wavelength,angle,reflection,kx,omega) #plot transformed data
 
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+}
