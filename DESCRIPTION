@@ -7,3 +7,4 @@ Author: Tom Constant
 Maintainer: <tjc202@ex.ac.uk>
 Description: Misc Tools for Photonics
 License: GPL
+Imports: fields, sfsmisc, jpeg, spam
