@@ -12,6 +12,7 @@ splot(data, ref, dkf)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
+  \item{data}{
 raw variable from imported data.dat file
 }
   \item{ref}{
@@ -41,15 +42,10 @@ raw variable from imported dkf.dat file (dark field reading)
 %%  ~~further notes~~
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
 function (data, ref, dkf) 
@@ -65,7 +61,4 @@ function (data, ref, dkf)
     return(normData/normRef)
   }
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

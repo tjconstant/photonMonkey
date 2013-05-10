@@ -78,3 +78,4 @@ omega<-2*pi*3e8/wavelength
 
 disp.plot3(wavelength,angle,reflection,kx,omega) #plot transformed data
 
+}

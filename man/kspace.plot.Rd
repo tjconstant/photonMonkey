@@ -38,7 +38,7 @@ Extra graphical parameters passed to image.plot()
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-A list containing center.correction, radius.correction, phi.correction and the kx, ky and z matrices.
+A list containing center.correction, radius.correction, phi.correction and the kx, ky and z matrices.}
 \references{
 %% ~put references to the literature/web site here ~
 }
@@ -49,14 +49,11 @@ Tom Constant
 %%  ~~further notes~~
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
+
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

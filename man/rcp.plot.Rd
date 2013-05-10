@@ -47,4 +47,4 @@ manipulate(rcpPlot(a*1e-9,b*1e-9,k0=2*pi/(lambda0*1e-9),alpha),
            b=slider(200,850,initial=600,step=1),
            alpha=slider(0,90,initial=90),
            lambda0=slider(400,850,initial=633,step=1))
-
+}
