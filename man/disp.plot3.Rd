@@ -60,7 +60,7 @@ graphical parameters to be passed to image.plot
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link[image.plot:fields]{image.plot()}}
+\code{\link[fields]{image.plot}}
 }
 \examples{
 library(fields) #required packages

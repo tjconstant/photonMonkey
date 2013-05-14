@@ -8,7 +8,7 @@ Function to calculate reflectivity from raw Monochromator data
 Divides the signal by a reference spectra
 }
 \usage{
-splot(data, ref, dkf)
+spectrum.normalise(data, ref, dkf)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

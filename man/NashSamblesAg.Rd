@@ -35,6 +35,5 @@ Very useful if samples were prepared at Exeter using the same methods as in ref 
 }
 \examples{
 data(NashSamblesAg)
-## maybe str(NashSamblesAg) ; plot(NashSamblesAg) ...
 }
 \keyword{datasets}

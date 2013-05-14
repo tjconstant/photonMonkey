@@ -8,7 +8,7 @@ Plotting of irregular spaced matrix data with aribitary transformations using gg
 ggplot2 wrapper for disp.plot3. Plotting of irregular spaced matrix data with aribitary transformations using ggplot package.
 }
 \usage{
-ggdisp.plot(x,y,z,fx,fy)
+ggdisp.plot(x,y=NA,z=NA,fx=x,fy=y,midpoint=FALSE,col=c("black","white"))
 }
 
 \arguments{
@@ -25,7 +25,7 @@ z vector
 functional transformation of length(x)
 }
   \item{fy}{
-functional transformation of length(x)
+functional transformation of length(y)
 }
   \item{midpoint}{
 see ?poly.image

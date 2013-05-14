@@ -11,7 +11,6 @@ The measured permittivity of silver in the visible regime
 \format{
   A data frame with 79 observations on the following 3 variables.
   \describe{
-    \item{\code{X}}{Row index}
     \item{\code{Wavelength}}{Wavelength of light (nm)}
     \item{\code{EpsilonReal}}{Real part of the complex permittivity}
     \item{\code{EpsilonImaginary}}{Imaginary part of the complex permittivity}

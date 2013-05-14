@@ -41,10 +41,5 @@ Tom Constant
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-library(manipulate)
-manipulate(rcp.plot(a*1e-9,b*1e-9,k0=2*pi/(lambda0*1e-9),alpha),
-           a=slider(200,850,initial=600,step=1,),
-           b=slider(200,850,initial=600,step=1),
-           alpha=slider(0,90,initial=90),
-           lambda0=slider(400,850,initial=633,step=1))
+
 }
