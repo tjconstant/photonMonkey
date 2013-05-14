@@ -6,6 +6,11 @@ Complex Permittivity of Silver in the Visible Regime (dataset)
 }
 \description{
 The measured permittivity of silver in the visible Regime
+=======
+Complex Permittivity of Silver in the Visible Regieme (dataset)
+}
+\description{
+The measured permittivity of silver in the visible regieme
 }
 \usage{data(NashSamblesAg)}
 \format{
