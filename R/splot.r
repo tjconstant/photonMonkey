@@ -1,5 +1,7 @@
 splot<-function(data,ref,dkf){
-
+  
+  warning("splot() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead spectrum.normalise()")
+  
   #dark field correction
 
   d<-data[,3]-mean(dkf[,3])
@@ -33,6 +35,6 @@ splot<-function(data,ref,dkf){
 #   plot(data[,1],normData/normRef, type='l', ylim=c(0,1), main="data fully normalised", xlab="wavelength (nm)", ylab="R")
 #   grid()
 
-  par(mfrow=c(1,1))
+#  par(mfrow=c(1,1))
   return(normData/normRef)
 }

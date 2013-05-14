@@ -1,8 +1,8 @@
-\name{splot}
-\alias{splot}
+\name{spectrum.normalise}
+\alias{spectrum.normalise}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function to calculate reflectivity from raw Monochromator data (depreciated)
+Function to calculate reflectivity from raw Monochromator data
 }
 \description{
 Divides the signal by a reference spectra
