@@ -7,5 +7,29 @@ Author: Tom Constant
 Maintainer: <tjc202@ex.ac.uk>
 Description: Misc Tools for Photonics
 License: GPL
-Depends: fields, sfsmisc, jpeg, spam, akima
-Suggests: ggplot2, manipulate
+Depends:
+    fields,
+    sfsmisc,
+    jpeg,
+    spam,
+    akima
+Suggests:
+    ggplot2,
+    manipulate
+Collate:
+    'add.diffraction.R'
+    'circle.R'
+    'diffraction.line.R'
+    'disp.plot.R'
+    'disp.plot3.R'
+    'ellipse.R'
+    'fancyLaTexAxis.R'
+    'ggdisp.plot.R'
+    'jet.colors.R'
+    'kspace.plot.R'
+    'permittivity.NashSamblesAg.R'
+    'permittivity.PalikAg.R'
+    'rcp.plot.R'
+    'semicircle.R'
+    'spectrum.normalise.R'
+    'splot.r'
