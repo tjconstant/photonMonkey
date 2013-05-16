@@ -33,3 +33,4 @@ Collate:
     'semicircle.R'
     'spectrum.normalise.R'
     'splot.r'
+    'unwrap.phase.R'
