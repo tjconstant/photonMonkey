@@ -1,4 +1,4 @@
-photonMonkey
+photonMonkey v0.9
 ============
 
 Misc convenience functions for use in photonics. 

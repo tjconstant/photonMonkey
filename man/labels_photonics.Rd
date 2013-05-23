@@ -5,6 +5,7 @@
 \alias{label_polar_angle}
 \alias{label_azimuthal_angle}
 \alias{label_reflection}
+\alias{label_transmission}
 \alias{label_wavelength}
 \alias{label_frequency}
 %- Also NEED an '\alias' for EACH other topic documented here.
@@ -17,9 +18,10 @@ Quick expression generation for axes labels, etc.
 \usage{
 label_in_plane_wavevector(subscript,si_prefix)
 label_angular_frequency()
-label_polar_angle()
-label_azimuthal_angle()
+label_polar_angle(unit)
+label_azimuthal_angle(unit)
 label_reflection(subscript)
+label_transmission(subscript)
 label_wavelength(si_prefix)
 label_frequency(si_prefix)
 }
@@ -30,6 +32,9 @@ A charcter string for using in the relavent subscript of the expression.
 }
   \item{si_prefix}{
 A character string for the SI unit scale prefix. Greek letters may be typed, for example "mu" will display as the greek symbol mu. The default is "phantom()", which produces no prefix.
+}
+  \item{unit}{
+Unit to use for angles. Default is degree, producing a degree symbol.  
 }
 }
 \details{
