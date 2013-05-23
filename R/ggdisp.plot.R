@@ -79,8 +79,8 @@ ggdisp.plot<-function(x,                     # x vector
     scale_color_gradientn(colours=col,name="R")+
     scale_fill_gradientn(colours=col,name="R")+
     theme_bw()+
-    xlab(expression(paste("in-plane momentum, ",italic(k[x])," (",m^-1,")")))+
-    ylab(expression(paste("angular momentum, ", omega," (rad ",s^-1,")")))
+    xlab("x")+
+    ylab("y")
   
   return(p)
 }

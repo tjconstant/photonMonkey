@@ -14,7 +14,7 @@ disp.plot3<-function(x,                     # x vector
   dim(z)<-c(nx,ny)
   
   if(1<2){
-    image.plot(fx,fy,z,nlevel=100,...)
+    image.plot(fx,fy,z,nlevel=100,xaxs='i',yaxs='i',...)
     
   }else{
     interpolated_Matrix<-akima:::interp(fx,fy,z,duplicate="mean",linear=FALSE,extrap=FALSE,xo=seq(min(fx), max(fx), length = 40),
