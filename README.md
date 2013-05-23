@@ -1,6 +1,10 @@
-photonMonkey v0.9
+photonMonkey v0.911
 ============
 
 Misc convenience functions for use in photonics. 
 
-In particular the disp.plot3 function for plotting a colourmap for irregularly spaced data.
+To install from within an R session, use the devtools package like so:
+```
+library(devtools)
+install_github('photonMonkey','tjconstant')
+```
