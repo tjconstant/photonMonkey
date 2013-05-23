@@ -8,7 +8,6 @@
 \alias{label_transmission}
 \alias{label_wavelength}
 \alias{label_frequency}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Convenient Labelling for Photonics Graphs
 }
@@ -25,7 +24,7 @@ label_transmission(subscript)
 label_wavelength(si_prefix)
 label_frequency(si_prefix)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{subscript}{
 A charcter string for using in the relavent subscript of the expression.
@@ -41,7 +40,7 @@ Unit to use for angles. Default is degree, producing a degree symbol.
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-A R expression for use in labels and text.
+A R expression for use in labels and text.}
 \references{
 %% ~put references to the literature/web site here ~
 }
@@ -52,11 +51,10 @@ Tom Constant
 %%  ~~further notes~~
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
+
 \examples{
 plot(NA,NA,xlim=c(0,1),ylim=c(0,1))
 text(0.5,1,label_angular_frequency())
