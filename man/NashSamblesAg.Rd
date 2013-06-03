@@ -28,10 +28,10 @@ The measured permittivity of silver in the visible regieme
 Very useful if samples were prepared at Exeter using the same methods as in ref [1].
 }
 \source{
-[1] D. J. Nash and J. R. Sambles, J. Mod. Op. 43, 81–91 (1996).
+[1] D. J. Nash and J. R. Sambles, J. Mod. Op. 43, pp81 (1996).
 }
 \references{
-[1] D. J. Nash and J. R. Sambles, J. Mod. Op. 43, 81–91 (1996).
+[1] D. J. Nash and J. R. Sambles, J. Mod. Op. 43, pp81 (1996).
 }
 \examples{
 data(NashSamblesAg)

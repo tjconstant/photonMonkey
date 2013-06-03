@@ -23,7 +23,7 @@ Wavelength in nanometers
 A dataframe containing wavelength, and interpolated complex permittivity as a function of the supplied wavelengths.
 }
 \references{
-[1] D. J. Nash and J. R. Sambles, J. Mod. Op. 43, 81–91 (1996).
+[1] D. J. Nash and J. R. Sambles, J. Mod. Op. 43, pp81 (1996).
 }
 \author{
 Tom Constant
