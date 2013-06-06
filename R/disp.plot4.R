@@ -14,5 +14,5 @@ x2<-matrix(int_spp$x,nrow=smooth_value,ncol=smooth_value)
 y2<-matrix(int_spp$y,nrow=smooth_value,ncol=smooth_value,byrow=T)
 z2<-int_spp$z
 
-image.plot((2*pi/(x2*1e-9))*sin(y2*pi/180),2*pi*3e8/(x2*1e-9),z2,xaxs='i',yaxs='i')
+image.plot((2*pi/(x2*1e-9))*sin(y2*pi/180),2*pi*3e8/(x2*1e-9),z2,xaxs='i',yaxs='i',col=grey(0:100/100))
 #add.diffraction(kgx=2*pi/600e-9,kgv=2*pi/150e-9)
