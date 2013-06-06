@@ -14,10 +14,10 @@ for(n in -5:5){
     
       in.plane<-(sqrt(((k * cos(phi) + m * kgx - n * kgv * cos(alpha))^2) + ((k * sin(phi) -  n * kgv * sin(alpha))^2)))
     
-      if(any(max(k)^2>(in.plane)^2)){
+      #if(any(max(k)^2>(in.plane)^2)){
       
         lines(diffraction.line(k, kgx, kgv, m, n, phi, alpha),...)
-      }
+      #}
 
     }
   }
