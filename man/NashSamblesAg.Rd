@@ -7,9 +7,7 @@ Complex Permittivity of Silver in the Visible Regime (dataset)
 \description{
 The measured permittivity of silver in the visible Regime
 }
-\description{
-The measured permittivity of silver in the visible regieme
-}
+
 \usage{data(NashSamblesAg)}
 \format{
   A data frame with 19 observations on the following 8 variables.
