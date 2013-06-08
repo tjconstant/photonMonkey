@@ -1,4 +1,4 @@
-circle<-function(x.center,y.center,radius=r,...){
+circle<-function(x.center,y.center,radius,...){
   
   
   nseg=360

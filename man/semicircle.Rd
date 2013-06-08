@@ -8,7 +8,7 @@ Draw a semi-circle
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-semicircle(x.center, y.center, radius = r, start_angle, end_angle, ...)
+semicircle(x.center, y.center, radius, start_angle, end_angle, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

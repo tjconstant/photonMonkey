@@ -1,4 +1,4 @@
-semicircle<-function(x.center,y.center,radius=r,start_angle,end_angle,...){
+semicircle<-function(x.center,y.center,radius,start_angle,end_angle,...){
   
   
   nseg=360

@@ -1,5 +1,7 @@
 \name{disp.plot4}
 \alias{disp.plot4}
+\alias{nothing_x}
+\alias{nothing_y}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 New Super-Experimental disp.plot3 function
@@ -8,7 +10,9 @@ New Super-Experimental disp.plot3 function
 New Super-Experimental disp.plot3 function including gridded bivariate interpolation for irregular data from the akima package.
 }
 \usage{
-disp.plot4(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)))
+disp.plot4(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),...)
+nothing_x(x,y)
+nothing_y(x,y)
 }
 \arguments{
   \item{x}{
@@ -39,6 +43,8 @@ A new version of the disp.plot function for plotting non-linearlly spaced data, 
 Because the smoothing function is always called, disp.plot4 is x5 times slower than disp.plot3 when producing the same image.
 
 Also note, the use of fx and fy is different in this case. In this function fx and fy are passed as functions, not raw vectors. See the examples for how to use this method to plot dispersion.
+
+nothing_x(x,y) and nothing_y(x,y) are the default functions for transformations, and do nothing (i.e. return x and y respectivley)
 }
 \value{
 Returns an image plot of the data

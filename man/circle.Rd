@@ -8,7 +8,7 @@ Function to plot a circle
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-circle(x.center, y.center, radius = r, ...)
+circle(x.center, y.center, radius, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

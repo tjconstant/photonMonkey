@@ -12,7 +12,7 @@ Misc Tools for Photonics
 \tabular{ll}{
 Package: \tab photonMonkey\cr
 Type: \tab Package\cr
-Version: \tab 0.9\cr
+Version: \tab 0.912\cr
 Date: \tab 2012-10-17\cr
 License: \tab GPL\cr
 }
