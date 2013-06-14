@@ -7,7 +7,9 @@ disp.plot3<-function(x,                     # x vector
                      ny=length(unique(y)),  #length of unique y vector values
                      ...){                  # graphical parameters
   
-  require("fields")
+  #require("fields",quietly=TRUE)
+  
+  image.plot<-fields::image.plot
   
   dim(fx)<-c(nx,ny)
   dim(fy)<-c(nx,ny)

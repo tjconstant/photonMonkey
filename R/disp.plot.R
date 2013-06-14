@@ -1,7 +1,15 @@
 disp.plot <- function(tk,tf,tr,plotXLim=c(min(tk,na.rm=TRUE),max(tk,na.rm=TRUE)),plotYLim=c((min(tf,na.rm=TRUE)),max(tf,na.rm=TRUE)),ncol=64,nrow=64,smooth=0,smoothY=smooth,zScale=c(0,1),colScale=grey(0:1000/1000),...){
 
-require("fields")
-require("sfsmisc")
+#require("fields",quietly=T)
+require("sfsmisc",quietly=T)
+
+as.image<-fields::as.image
+make.surface.grid<-fields::make.surface.grid
+interp.surface<-fields::interp.surface
+image.plot<-fields::image.plot
+as.surface<-fields::as.surface
+
+
 
 # zscale setup
 #zScale<-c()

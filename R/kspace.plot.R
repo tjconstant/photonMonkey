@@ -8,8 +8,9 @@ kspace.plot<-function(filename,
 ){
   
   require("jpeg")
-  require("fields")
-  require("photonMonkey")
+  #require("fields")
+  image.plot<-fields::image.plot
+  #require("photonMonkey")
   
   rawImage<-readJPEG(source=filename,native=F)
   
