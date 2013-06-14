@@ -7,5 +7,5 @@ Author: Tom Constant
 Maintainer: <tjc202@ex.ac.uk>
 Description: Misc Tools for Photonics
 License: GPL
-Depends: fields, sfsmisc, jpeg, spam, akima
+Depends: fields, sfsmisc, jpeg, akima
 Suggests: ggplot2, manipulate
