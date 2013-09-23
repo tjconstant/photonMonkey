@@ -1,7 +1,7 @@
 disp.plot4<-function(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),...){
 
   interp<-akima::interp
-  int_spp<-interp(x,y,z,xo=seq(min(x),max(x),,nx),yo=seq(min(y),max(y),,ny))
+  int_spp<-interp(x,y,z,xo=seq(min(x),max(x),length=nx),yo=seq(min(y),max(y),length=ny),linear=T)
   
   x2<-matrix(int_spp$x,nrow=nx,ncol=ny)
   y2<-matrix(int_spp$y,nrow=nx,ncol=ny,byrow=T)
