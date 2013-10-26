@@ -7,6 +7,6 @@ Author: Tom Constant
 Maintainer: <tjc202@ex.ac.uk>
 Description: Misc Tools for Photonics
 License: GPL
-Depends: sfsmisc, jpeg, akima
-Imports: fields, akima
+Depends: sfsmisc, jpeg, akima, scales
+Imports: fields, akima, scales
 Suggests: ggplot2, manipulate

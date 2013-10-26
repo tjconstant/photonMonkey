@@ -44,7 +44,7 @@ Tom Constant
 \examples{
 
 par(mar=c(4.5,6.5,1,1))
-plot(c(1,2,3),c(1,2,3)*1e-15,yaxt='n',ylab="",xlab=label_polar_angle()) #turn off ylabels and yaxis
+plot(c(1,2,3),c(1,2,3)*1e15,yaxt='n',ylab="",xlab=label_polar_angle()) #turn off ylabels and yaxis
 
 axis(2,at=axTicks(2),label_scientific10(axTicks(2)),las=1)
 
