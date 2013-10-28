@@ -1,6 +1,6 @@
-.onLoad<-function(libname=find.package("photonMonkey"),pkgname="photonMonkey"){
+.onAttach<-function(libname=find.package("photonMonkey"),pkgname="photonMonkey"){
   
-  cat("\nWelcome to photonMonkey! \nUtility functions for common tasks in electromagnetics.")
+  packageStartupMessage("\nWelcome to photonMonkey! \nUtility functions for common tasks in electromagnetics.")
   
 
   wisdom<-c("MATLAB is for engineers and Pandas.",
@@ -15,5 +15,5 @@
   
   wisdom_index<-sample(1:length(wisdom),1,replace=T)
   
-  cat(paste("\nA little wisdom:",wisdom[wisdom_index]))
+  packageStartupMessage(paste("\nA little wisdom:",wisdom[wisdom_index]))
 }
