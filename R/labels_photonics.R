@@ -25,9 +25,12 @@ label_transmission<-function(subscript="pp"){
   parse(text=paste("italic(T)[",subscript,"]",sep=""))
 }
 
-label_wavelength<-function(si_prefix="phantom()"){
-  return(parse(text=paste("list(wavelength,~lambda~(",si_prefix,"*m))",sep="")))
+label_wavelength<-function (si_prefix = "phantom()", subscript = "phantom()") 
+{
+  return(parse(text = paste("list(wavelength,~lambda[", subscript, "]~(", si_prefix, 
+                            "*m))", sep = "")))
 }
+
 
 label_frequency<-function(si_prefix="phantom()"){
   return(parse(text=paste("list(frequency,~italic(f)~~(",si_prefix,"*Hz))",sep="")))
