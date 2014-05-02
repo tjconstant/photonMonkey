@@ -1,7 +1,7 @@
 theme_pm <- function(...){
   theme (
     plot.title = element_text (vjust = 3, size = 20), # plot title attrib.
-    plot.margin = unit (c(3, 3, 3, 3), "lines"), # plot margins
+    plot.margin = unit (c(1, 1, 1, 1), "lines"), # plot margins
     panel.border = element_rect (colour = "black", fill = F, size = 1), # axis colour = black
     panel.grid.major = element_line (color='grey98'), # remove major grid
     panel.grid.minor = element_line (color='grey99'), # remove minor grid
