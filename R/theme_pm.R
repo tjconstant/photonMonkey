@@ -1,10 +1,11 @@
 theme_pm <- function(...){
+  unit <- grid::unit
   theme (
     plot.title = element_text (vjust = 3, size = 20), # plot title attrib.
     plot.margin = unit (c(1, 1, 1, 1), "lines"), # plot margins
     panel.border = element_rect (colour = "black", fill = F, size = 1), # axis colour = black
-    panel.grid.major = element_line (color='grey98'), # remove major grid
-    panel.grid.minor = element_line (color='grey99'), # remove minor grid
+    panel.grid.major = element_line (color='grey95'), # remove major grid
+    panel.grid.minor = element_line (color='grey97'), # remove minor grid
     panel.background = element_rect (fill = "white"), # background colour
     legend.background = element_rect (color='grey98',fill = "white"), # background colour
     legend.justification=c(0, 0), # lock point for legend
@@ -13,7 +14,7 @@ theme_pm <- function(...){
     legend.title = element_blank (), # switch off the legend title
     legend.text = element_text (size = 10), # sets the attributes of the legend text
     axis.title.x = element_text (vjust = -1, size = 15), # change the axis title
-    axis.title.y = element_text (vjust = -0.1, angle = 90, size = 15), # change the axis title
+    axis.title.y = element_text (vjust = 0.25, angle = 90, size = 15), # change the axis title
     axis.text.x = element_text (size = 12.5, vjust = -0.25, colour = "black"),# change the axis label font attributes
     axis.text.y = element_text (size = 12.5, hjust = 1, colour = "black"), # change the axis label font attributes
     axis.ticks = element_line (colour = "black", size = 0.5), # sets the thickness and colour of axis ticks
