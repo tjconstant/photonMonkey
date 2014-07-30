@@ -1,7 +1,7 @@
 Package: photonMonkey
 Type: Package
 Title: Misc Tools for Photonics
-Version: 0.912
+Version: 0.913
 Date: 2012-10-17
 Author: Tom Constant
 Maintainer: <tjc202@ex.ac.uk>
