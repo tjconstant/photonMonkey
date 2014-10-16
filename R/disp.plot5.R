@@ -1,5 +1,9 @@
 disp.plot5<-function(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),method="bilinear",...){
-    
+  
+  if(x[2]-x[1]==0 & y[2]-y[1]!=0 & method=="bicubic"){
+    warning("x and y values are in unexpected order. Try swapping x & y.")
+  }
+  
   if(method=="bilinear"){
     
     interp<-akima::interp
@@ -15,7 +19,9 @@ disp.plot5<-function(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=len
     
     bicubic.grid<-akima::bicubic.grid
     
+
     z.matrix <- matrix(z,ncol = length(unique(y)))
+
     int_z <- bicubic.grid(x=seq(min(x),max(x),length=length(unique(x))),
                             y=seq(min(y),max(y),length=length(unique(y))),
                             z = z.matrix,
