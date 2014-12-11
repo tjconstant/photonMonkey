@@ -1,15 +1,20 @@
 read.delay_scan<-function(filename,
                           time_max=1,
+                          zero_offset=1:10,
                           quick_plot=T){
   
   
   data<-read.table(filename)$V1
   time<-seq(0,time_max,,length(read.table(filename)$V1))
   
+  data_offset<-data-mean(data[zero_offset])
+  
   if(quick_plot){
-    plot(time,data,xlab="time (ps)",pch=16);grid();lines(time,data)
+    plot(time,data_offset,xlab="time (ps)",pch=16);grid();lines(time,data_offset)
   }
   
-  return(data.frame(time,data))
+  return(data.frame(time,data_offset))
   
 }
+
+read.delay_scan("~/Dropbox/Laser Lab Data/08122014 GNR Wave Mixing/optim5_avg")
