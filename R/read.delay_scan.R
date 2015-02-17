@@ -18,8 +18,3 @@ read.delay_scan<-function(filename,
   return(data.frame(time=time,signal=data_offset))
   
 }
-<<<<<<< HEAD
-=======
-
-#read.delay_scan("~/Dropbox/Laser Lab Data/08122014 GNR Wave Mixing/optim5_avg",time_max = 4,time_offset = 1,col=2)
->>>>>>> develop
