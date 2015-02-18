@@ -5,6 +5,8 @@ generate_4WM_maps<-function(lambda_1=seq(545,615,0.5),lambda_2=seq(545,615,0.5),
   
   lambda_4wm<-(2/lambda_1_m-1/t(lambda_2_m))^-1
   
+  lambda_dfg<-(1/lambda_1_m-1/t(lambda_2_m))^-1
+  
   
   image.plot<-fields::image.plot
   
@@ -14,11 +16,17 @@ generate_4WM_maps<-function(lambda_1=seq(545,615,0.5),lambda_2=seq(545,615,0.5),
                ylab=bquote(lambda[2]~(nm)),
                legend.lab=expression(lambda[4*W*M]))
     
+#   image.plot(lambda_1,lambda_2,lambda_dfg,nlevel = 128,
+#               xlab=bquote(lambda[1]~(nm)),
+#               ylab=bquote(lambda[2]~(nm)),
+#               legend.lab=expression(lambda[DFG]))
+    
     if(!is.na(filters[1])){
       contour(lambda_1,lambda_2,lambda_4wm,levels = filters, labels = paste(filters,"nm"),add=T)
     }
   }
   
+
   angle_4wm<-180*asin((lambda_4wm)*((2*sin(theta_1*pi/180)/lambda_1_m)-(sin(theta_2*pi/180)/t(lambda_2_m))))/pi
   
   image.plot(lambda_1,lambda_2,angle_4wm,nlevel = 128,
