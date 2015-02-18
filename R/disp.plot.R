@@ -1,5 +1,7 @@
 disp.plot <- function(tk,tf,tr,plotXLim=c(min(tk,na.rm=TRUE),max(tk,na.rm=TRUE)),plotYLim=c((min(tf,na.rm=TRUE)),max(tf,na.rm=TRUE)),ncol=64,nrow=64,smooth=0,smoothY=smooth,zScale=c(0,1),colScale=grey(0:1000/1000),...){
 
+warning("disp.plot() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead disp.plot6()")
+  
 #require("fields",quietly=T)
 require("sfsmisc",quietly=T)
 
