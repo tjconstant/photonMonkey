@@ -9,6 +9,7 @@ disp.plot3<-function(x,                     # x vector
   
   #require("fields",quietly=TRUE)
   
+  warning("disp.plot3() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead disp.plot6()")
   image.plot<-fields::image.plot
   
   dim(fx)<-c(nx,ny)

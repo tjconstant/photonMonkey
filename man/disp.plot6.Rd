@@ -1,16 +1,16 @@
-\name{disp.plot4}
-\alias{disp.plot4}
+\name{disp.plot6}
+\alias{disp.plot6}
 \alias{nothing_x}
 \alias{nothing_y}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-New Super-Experimental disp.plot3 function
+Plotting of irregular spaced matrix data with aribitary transformations. New Super-Experimental version.
 }
 \description{
 New Super-Experimental disp.plot3 function including gridded bivariate interpolation for irregular data from the akima package.
 }
 \usage{
-disp.plot4(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),...)
+disp.plot6(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),method="bilinear",...)
 nothing_x(x,y)
 nothing_y(x,y)
 }
@@ -33,6 +33,9 @@ function of x and y returning the functional transformation of the y-axis
   \item{nx,ny}{
 The square image will be constructed from nx by ny polygons. If nx and ny are equal to the defaults, length(unique(x)) and length(unique(y)), the plot produced will be identical to disp.plot3. Higher values of nx and ny will produce smoother plots.
 }
+  \item{method}{
+  Specifies the interpolation method to use. Default is 'bilinear' using akima::interp, you can also use 'bicubic' (from akima::bicubic.grid).
+  }
   \item{...}{
   The usual arguments to the image function as x,y,or z or as a list with x,y,z as components. One can also include a breaks argument for an unequal color scale with color scale boundaries at the breaks (see example in the image.plot documentation).
   }
@@ -62,8 +65,9 @@ Tom Constant
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link[fields]{image.plot}}
-\code{\link[akima]{interp}}
+\code{\link[fields]{image.plot}},
+\code{\link[akima]{interp}},
+\code{\link[akima]{bicubic.grid}}
 }
 \examples{
 data(SPPdispersion)
@@ -75,8 +79,8 @@ z<-SPPdispersion$reflection
 kx<-function(x,y) (2*pi/(x*1e-9))*sin(y*pi/180)
 omega<-function(x,y) 2*pi*3e8/(x*1e-9)
 
-disp.plot4(x,y,z)
+disp.plot6(x,y,z)
 
-disp.plot4(x,y,z,fx=kx,fy=omega,nx=300,ny=300)
+disp.plot6(x,y,z,fx=kx,fy=omega,nx=200,ny=200,method="bicubic")
 }
 

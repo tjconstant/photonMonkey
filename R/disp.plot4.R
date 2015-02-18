@@ -1,5 +1,7 @@
 disp.plot4<-function(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),...){
 
+  warning("disp.plot4() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead disp.plot6()")
+  
   interp<-akima::interp
   int_spp<-interp(x,y,z,xo=seq(min(x),max(x),length=nx),yo=seq(min(y),max(y),length=ny),linear=T)
   
