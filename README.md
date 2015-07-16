@@ -10,7 +10,7 @@ install_github('photonMonkey','tjconstant')
 ```
 
 v0.914 Major Changes:
-* disp.plot5 added with bicubic interpolation.
+* disp.plot5 and 6 added with bicubic interpolation.
 
 v0.912 Major Changes:
 * disp.plot4 experimental plotting function added
