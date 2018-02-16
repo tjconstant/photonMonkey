@@ -1,5 +1,8 @@
 disp.plot5<-function(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),method="bilinear",...){
   
+  .Defunct(msg = "disp.plot5 is now defunct.\n Please see http://github.com/tjconstant/disp.plot for the latest version.")
+  
+  
   warning("disp.plot5() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead disp.plot6()")
   
   if(x[2]-x[1]==0 & y[2]-y[1]!=0 & method=="bicubic"){

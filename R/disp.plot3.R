@@ -9,6 +9,8 @@ disp.plot3<-function(x,                     # x vector
   
   #require("fields",quietly=TRUE)
   
+  .Defunct(msg = "disp.plot3 is now defunct.\n Please see http://github.com/tjconstant/disp.plot for the latest version.")
+  
   warning("disp.plot3() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead disp.plot6()")
   image.plot<-fields::image.plot
   

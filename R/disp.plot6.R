@@ -9,6 +9,9 @@ disp.plot6<-function(x,
                      return_data=F,
                      ...){
   
+  .Defunct(msg = "disp.plot6 is now defunct.\n Please see http://github.com/tjconstant/disp.plot for the latest version.")
+  
+  
   interp_grid<-disp.grid(x,y,z,nx,ny,method)
   
   x<-interp_grid$x

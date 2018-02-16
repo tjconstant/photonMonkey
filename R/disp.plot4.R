@@ -1,5 +1,7 @@
 disp.plot4<-function(x,y,z,fx=nothing_x,fy=nothing_y,nx=length(unique(x)),ny=length(unique(y)),...){
 
+  .Defunct(msg = "disp.plot4 is now defunct.\n Please see http://github.com/tjconstant/disp.plot for the latest version.")
+  
   warning("disp.plot4() is depreciated and will no longer be supported in future versions of photonMonkey.\n Use instead disp.plot6()")
   
   interp<-akima::interp
